@@ -1,3 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Google Maps My List</title>
+    <meta charset="utf-8">
+    <style>
+      #header {
+        font-family: Meriyo UI;
+        font-size: 14px;
+    	  color: white;
+        font-weight: bold;
+    	  background-color: darkblue;
+    	  padding: 3px;
+				width: 1750px;
+        border: 1px outset gray;
+      }
+      #target {
+        border: 1px outset gray;
+        width: 1400px;
+        height: 900px;
+      }
+      #sidebar {
+        border: 1px solid #666;
+        padding: 6px;
+        background-color: white;
+        font-family: Meriyo UI;
+        font-size: 12px;
+        overflow: auto;
+        width: 337px;
+        height: 888px;
+      }
+      #tag {
+        font-size: 16px;
+        height: 30px;
+      }
+      #getTag {
+        font-size: 16px;
+        width: 200px;
+        color: #fff;
+        background: green;
+        border-radius: 5px;
+        height: 30px;
+      }
+    </style>
+  </head>
 
-<!-- saved from url=(0047)https://anotherskyjp.site/world/map/mylist.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div class="line-gutter-backdrop"></div><table><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><span class="html-doctype">&lt;!DOCTYPE html&gt;</span></td></tr><tr><td class="line-number" value="2"></td><td class="line-content"><span class="html-tag">&lt;html <span class="html-attribute-name">lang</span>="<span class="html-attribute-value">ja</span>"&gt;</span></td></tr><tr><td class="line-number" value="3"></td><td class="line-content">  <span class="html-tag">&lt;head&gt;</span></td></tr><tr><td class="line-number" value="4"></td><td class="line-content">    <span class="html-tag">&lt;title&gt;</span>Google Maps My List<span class="html-tag">&lt;/title&gt;</span></td></tr><tr><td class="line-number" value="5"></td><td class="line-content">    <span class="html-tag">&lt;meta <span class="html-attribute-name">charset</span>="<span class="html-attribute-value">utf-8</span>"&gt;</span></td></tr><tr><td class="line-number" value="6"></td><td class="line-content">    <span class="html-tag">&lt;style&gt;</span></td></tr><tr><td class="line-number" value="7"></td><td class="line-content">      #header {</td></tr><tr><td class="line-number" value="8"></td><td class="line-content">        font-family: Meriyo UI;</td></tr><tr><td class="line-number" value="9"></td><td class="line-content">        font-size: 14px;</td></tr><tr><td class="line-number" value="10"></td><td class="line-content">    	  color: white;</td></tr><tr><td class="line-number" value="11"></td><td class="line-content">        font-weight: bold;</td></tr><tr><td class="line-number" value="12"></td><td class="line-content">    	  background-color: darkblue;</td></tr><tr><td class="line-number" value="13"></td><td class="line-content">    	  padding: 3px;</td></tr><tr><td class="line-number" value="14"></td><td class="line-content">				width: 1750px;</td></tr><tr><td class="line-number" value="15"></td><td class="line-content">        border: 1px outset gray;</td></tr><tr><td class="line-number" value="16"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="17"></td><td class="line-content">      #target {</td></tr><tr><td class="line-number" value="18"></td><td class="line-content">        border: 1px outset gray;</td></tr><tr><td class="line-number" value="19"></td><td class="line-content">        width: 1400px;</td></tr><tr><td class="line-number" value="20"></td><td class="line-content">        height: 900px;</td></tr><tr><td class="line-number" value="21"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="22"></td><td class="line-content">      #sidebar {</td></tr><tr><td class="line-number" value="23"></td><td class="line-content">        border: 1px solid #666;</td></tr><tr><td class="line-number" value="24"></td><td class="line-content">        padding: 6px;</td></tr><tr><td class="line-number" value="25"></td><td class="line-content">        background-color: white;</td></tr><tr><td class="line-number" value="26"></td><td class="line-content">        font-family: Meriyo UI;</td></tr><tr><td class="line-number" value="27"></td><td class="line-content">        font-size: 12px;</td></tr><tr><td class="line-number" value="28"></td><td class="line-content">        overflow: auto;</td></tr><tr><td class="line-number" value="29"></td><td class="line-content">        width: 337px;</td></tr><tr><td class="line-number" value="30"></td><td class="line-content">        height: 888px;</td></tr><tr><td class="line-number" value="31"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="32"></td><td class="line-content">      #tag {</td></tr><tr><td class="line-number" value="33"></td><td class="line-content">        font-size: 16px;</td></tr><tr><td class="line-number" value="34"></td><td class="line-content">        height: 30px;</td></tr><tr><td class="line-number" value="35"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="36"></td><td class="line-content">      #getTag {</td></tr><tr><td class="line-number" value="37"></td><td class="line-content">        font-size: 16px;</td></tr><tr><td class="line-number" value="38"></td><td class="line-content">        width: 200px;</td></tr><tr><td class="line-number" value="39"></td><td class="line-content">        color: #fff;</td></tr><tr><td class="line-number" value="40"></td><td class="line-content">        background: green;</td></tr><tr><td class="line-number" value="41"></td><td class="line-content">        border-radius: 5px;</td></tr><tr><td class="line-number" value="42"></td><td class="line-content">        height: 30px;</td></tr><tr><td class="line-number" value="43"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="44"></td><td class="line-content">    <span class="html-tag">&lt;/style&gt;</span></td></tr><tr><td class="line-number" value="45"></td><td class="line-content">  <span class="html-tag">&lt;/head&gt;</span></td></tr><tr><td class="line-number" value="46"></td><td class="line-content"></td></tr><tr><td class="line-number" value="47"></td><td class="line-content">  <span class="html-tag">&lt;body&gt;</span></td></tr><tr><td class="line-number" value="48"></td><td class="line-content">    <span class="html-tag">&lt;div <span class="html-attribute-name">id</span>="<span class="html-attribute-value">header</span>"&gt;</span>Google Maps - 日本いろいろMY LIST<span class="html-tag">&lt;/div&gt;</span></td></tr><tr><td class="line-number" value="49"></td><td class="line-content">    <span class="html-tag">&lt;br&gt;</span></td></tr><tr><td class="line-number" value="50"></td><td class="line-content">    <span class="html-tag">&lt;div&gt;</span></td></tr><tr><td class="line-number" value="51"></td><td class="line-content">      <span class="html-tag">&lt;select <span class="html-attribute-name">id</span>="<span class="html-attribute-value">tag</span>"&gt;</span></td></tr><tr><td class="line-number" value="52"></td><td class="line-content">        <span class="html-tag">&lt;option <span class="html-attribute-name">value</span>="<span class="html-attribute-value">0</span>"&gt;</span>0.ALL<span class="html-tag">&lt;/option&gt;</span></td></tr><tr><td class="line-number" value="53"></td><td class="line-content">        <span class="html-tag">&lt;option <span class="html-attribute-name">value</span>="<span class="html-attribute-value">1</span>"&gt;</span>1.世界遺産<span class="html-tag">&lt;/option&gt;</span></td></tr><tr><td class="line-number" value="54"></td><td class="line-content">        <span class="html-tag">&lt;option <span class="html-attribute-name">value</span>="<span class="html-attribute-value">2</span>"&gt;</span>2.日本三大:七不思議<span class="html-tag">&lt;/option&gt;</span></td></tr><tr><td class="line-number" value="55"></td><td class="line-content">        <span class="html-tag">&lt;option <span class="html-attribute-name">value</span>="<span class="html-attribute-value">3</span>"&gt;</span>3.滝<span class="html-tag">&lt;/option&gt;</span></td></tr><tr><td class="line-number" value="56"></td><td class="line-content">        <span class="html-tag">&lt;option <span class="html-attribute-name">value</span>="<span class="html-attribute-value">4</span>"&gt;</span>4.城<span class="html-tag">&lt;/option&gt;</span></td></tr><tr><td class="line-number" value="57"></td><td class="line-content">        <span class="html-tag">&lt;option <span class="html-attribute-name">value</span>="<span class="html-attribute-value">5</span>"&gt;</span>5.山<span class="html-tag">&lt;/option&gt;</span></td></tr><tr><td class="line-number" value="58"></td><td class="line-content">        <span class="html-tag">&lt;option <span class="html-attribute-name">value</span>="<span class="html-attribute-value">6</span>"&gt;</span>6.温泉<span class="html-tag">&lt;/option&gt;</span></td></tr><tr><td class="line-number" value="59"></td><td class="line-content">        <span class="html-tag">&lt;option <span class="html-attribute-name">value</span>="<span class="html-attribute-value">7</span>"&gt;</span>7.国立公園<span class="html-tag">&lt;/option&gt;</span></td></tr><tr><td class="line-number" value="60"></td><td class="line-content">      <span class="html-tag">&lt;/select&gt;</span></td></tr><tr><td class="line-number" value="61"></td><td class="line-content">      <span class="html-tag">&lt;button <span class="html-attribute-name">id</span>="<span class="html-attribute-value">getTag</span>"&gt;</span>タグの絞込み<span class="html-tag">&lt;/button&gt;</span></td></tr><tr><td class="line-number" value="62"></td><td class="line-content">    <span class="html-tag">&lt;/div&gt;</span></td></tr><tr><td class="line-number" value="63"></td><td class="line-content"></td></tr><tr><td class="line-number" value="64"></td><td class="line-content">    <span class="html-tag">&lt;table&gt;</span></td></tr><tr><td class="line-number" value="65"></td><td class="line-content">      <span class="html-tag">&lt;tr&gt;</span></td></tr><tr><td class="line-number" value="66"></td><td class="line-content">        <span class="html-tag">&lt;td&gt;</span><span class="html-tag">&lt;div <span class="html-attribute-name">id</span>="<span class="html-attribute-value">target</span>"&gt;</span><span class="html-tag">&lt;/div&gt;</span><span class="html-tag">&lt;/td&gt;</span></td></tr><tr><td class="line-number" value="67"></td><td class="line-content">        <span class="html-tag">&lt;td&gt;</span><span class="html-tag">&lt;div <span class="html-attribute-name">id</span>="<span class="html-attribute-value">sidebar</span>"&gt;</span><span class="html-tag">&lt;/div&gt;</span><span class="html-tag">&lt;/td&gt;</span></td></tr><tr><td class="line-number" value="68"></td><td class="line-content">      <span class="html-tag">&lt;/tr&gt;</span></td></tr><tr><td class="line-number" value="69"></td><td class="line-content">    <span class="html-tag">&lt;/table&gt;</span></td></tr><tr><td class="line-number" value="70"></td><td class="line-content"></td></tr><tr><td class="line-number" value="71"></td><td class="line-content">    <span class="html-tag">&lt;script <span class="html-attribute-name">src</span>="<a class="html-attribute-value html-resource-link" target="_blank" href="https://maps.googleapis.com/maps/api/js?language=ja&amp;region=JP&amp;key=AIzaSyCR0ghzj18Kz4135gTOX77Ui2_7LJQKWYY&amp;callback=initMap" rel="noreferrer noopener">https://maps.googleapis.com/maps/api/js?language=ja&amp;region=JP&amp;key=AIzaSyCR0ghzj18Kz4135gTOX77Ui2_7LJQKWYY&amp;callback=initMap</a>" <span class="html-attribute-name">async</span> <span class="html-attribute-name">defer</span>&gt;</span><span class="html-tag">&lt;/script&gt;</span></td></tr><tr><td class="line-number" value="72"></td><td class="line-content"></td></tr><tr><td class="line-number" value="73"></td><td class="line-content">    <span class="html-tag">&lt;script&gt;</span></td></tr><tr><td class="line-number" value="74"></td><td class="line-content">      let marker = [];</td></tr><tr><td class="line-number" value="75"></td><td class="line-content">      let infoWindow = [];</td></tr><tr><td class="line-number" value="76"></td><td class="line-content">      let markerData = [];</td></tr><tr><td class="line-number" value="77"></td><td class="line-content"></td></tr><tr><td class="line-number" value="78"></td><td class="line-content">      // 地図初期表示</td></tr><tr><td class="line-number" value="79"></td><td class="line-content">      function initMap() {</td></tr><tr><td class="line-number" value="80"></td><td class="line-content"></td></tr><tr><td class="line-number" value="81"></td><td class="line-content">        const target = document.getElementById('target');</td></tr><tr><td class="line-number" value="82"></td><td class="line-content">        const centerp = {lat: 37.67229496806523, lng: 137.88838989062504};</td></tr><tr><td class="line-number" value="83"></td><td class="line-content"></td></tr><tr><td class="line-number" value="84"></td><td class="line-content">        map = new google.maps.Map(target, {</td></tr><tr><td class="line-number" value="85"></td><td class="line-content">          center: centerp,</td></tr><tr><td class="line-number" value="86"></td><td class="line-content">          zoom: 5,</td></tr><tr><td class="line-number" value="87"></td><td class="line-content">        });</td></tr><tr><td class="line-number" value="88"></td><td class="line-content"></td></tr><tr><td class="line-number" value="89"></td><td class="line-content">        // Function:地図データの取得</td></tr><tr><td class="line-number" value="90"></td><td class="line-content">        getMapdata();</td></tr><tr><td class="line-number" value="91"></td><td class="line-content"></td></tr><tr><td class="line-number" value="92"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="93"></td><td class="line-content"></td></tr><tr><td class="line-number" value="94"></td><td class="line-content">      // Function:地図データの取得</td></tr><tr><td class="line-number" value="95"></td><td class="line-content">      function getMapdata(){</td></tr><tr><td class="line-number" value="96"></td><td class="line-content"></td></tr><tr><td class="line-number" value="97"></td><td class="line-content">        //APIにてデータを取得して、位置とマーカーをセットするfunctionを呼び出す</td></tr><tr><td class="line-number" value="98"></td><td class="line-content">        const request = new XMLHttpRequest();</td></tr><tr><td class="line-number" value="99"></td><td class="line-content">        const bookid = '1g_tyf97anRd8ci1I9UwOICOm2R_oqP3OmfRrLJ2HnIM';</td></tr><tr><td class="line-number" value="100"></td><td class="line-content">        const sheetname = 'mylist';</td></tr><tr><td class="line-number" value="101"></td><td class="line-content">        const googleapi = 'AIzaSyCR0ghzj18Kz4135gTOX77Ui2_7LJQKWYY';</td></tr><tr><td class="line-number" value="102"></td><td class="line-content">        const url = 'https://sheets.googleapis.com/v4/spreadsheets/' + bookid + '/values/' + sheetname + '?key=' + googleapi;</td></tr><tr><td class="line-number" value="103"></td><td class="line-content"></td></tr><tr><td class="line-number" value="104"></td><td class="line-content">        request.open('GET', url, true);</td></tr><tr><td class="line-number" value="105"></td><td class="line-content">        request.responseType = 'json';</td></tr><tr><td class="line-number" value="106"></td><td class="line-content"></td></tr><tr><td class="line-number" value="107"></td><td class="line-content">        request.onload = function () {</td></tr><tr><td class="line-number" value="108"></td><td class="line-content">          const data = this.response;     // 取得できた値を格納</td></tr><tr><td class="line-number" value="109"></td><td class="line-content">          console.log(data);</td></tr><tr><td class="line-number" value="110"></td><td class="line-content">          markerData = parseData(data);   // Function:データ変換</td></tr><tr><td class="line-number" value="111"></td><td class="line-content">          console.log(markerData);</td></tr><tr><td class="line-number" value="112"></td><td class="line-content">          setData(markerData);            // Function:位置とマーカーをセット</td></tr><tr><td class="line-number" value="113"></td><td class="line-content">        };</td></tr><tr><td class="line-number" value="114"></td><td class="line-content"></td></tr><tr><td class="line-number" value="115"></td><td class="line-content">        request.send();</td></tr><tr><td class="line-number" value="116"></td><td class="line-content"></td></tr><tr><td class="line-number" value="117"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="118"></td><td class="line-content"></td></tr><tr><td class="line-number" value="119"></td><td class="line-content">      // Function:データ変換</td></tr><tr><td class="line-number" value="120"></td><td class="line-content">      function parseData(data) {</td></tr><tr><td class="line-number" value="121"></td><td class="line-content">        const keys = data.values[0];</td></tr><tr><td class="line-number" value="122"></td><td class="line-content">        const parsemarkerData = [];</td></tr><tr><td class="line-number" value="123"></td><td class="line-content">        data.values.forEach(function(value, i) {</td></tr><tr><td class="line-number" value="124"></td><td class="line-content">          if (i &gt; 0) {</td></tr><tr><td class="line-number" value="125"></td><td class="line-content">            const hash = {};</td></tr><tr><td class="line-number" value="126"></td><td class="line-content">            value.forEach(function(d, j) {</td></tr><tr><td class="line-number" value="127"></td><td class="line-content">              hash[keys[j]] = d;</td></tr><tr><td class="line-number" value="128"></td><td class="line-content">            });</td></tr><tr><td class="line-number" value="129"></td><td class="line-content">            parsemarkerData.push(hash);</td></tr><tr><td class="line-number" value="130"></td><td class="line-content">          }</td></tr><tr><td class="line-number" value="131"></td><td class="line-content">        });</td></tr><tr><td class="line-number" value="132"></td><td class="line-content">        return parsemarkerData;</td></tr><tr><td class="line-number" value="133"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="134"></td><td class="line-content"></td></tr><tr><td class="line-number" value="135"></td><td class="line-content">      // Function:位置とマーカーをセット</td></tr><tr><td class="line-number" value="136"></td><td class="line-content">      function setData(markerData){</td></tr><tr><td class="line-number" value="137"></td><td class="line-content"></td></tr><tr><td class="line-number" value="138"></td><td class="line-content">        // 初期化</td></tr><tr><td class="line-number" value="139"></td><td class="line-content">        let sidebar_html = "";</td></tr><tr><td class="line-number" value="140"></td><td class="line-content">        marker = [];</td></tr><tr><td class="line-number" value="141"></td><td class="line-content"></td></tr><tr><td class="line-number" value="142"></td><td class="line-content">        for (let i = 0; i &lt; markerData.length; i++) {</td></tr><tr><td class="line-number" value="143"></td><td class="line-content"></td></tr><tr><td class="line-number" value="144"></td><td class="line-content">          // マーカー位置のセット</td></tr><tr><td class="line-number" value="145"></td><td class="line-content">          const markerLatLng = new google.maps.LatLng({</td></tr><tr><td class="line-number" value="146"></td><td class="line-content">            lat: Number(markerData[i]['lat']),</td></tr><tr><td class="line-number" value="147"></td><td class="line-content">            lng: Number(markerData[i]['lng'])</td></tr><tr><td class="line-number" value="148"></td><td class="line-content">          });</td></tr><tr><td class="line-number" value="149"></td><td class="line-content"></td></tr><tr><td class="line-number" value="150"></td><td class="line-content">          // マーカーアイコンのセット</td></tr><tr><td class="line-number" value="151"></td><td class="line-content">          const tagno = markerData[i]['tag'].charAt(0)</td></tr><tr><td class="line-number" value="152"></td><td class="line-content">          switch (tagno) {</td></tr><tr><td class="line-number" value="153"></td><td class="line-content">            case '1':</td></tr><tr><td class="line-number" value="154"></td><td class="line-content">              iconcolor = './icon_tag/tag1.png'</td></tr><tr><td class="line-number" value="155"></td><td class="line-content">              break;</td></tr><tr><td class="line-number" value="156"></td><td class="line-content">            case '2':</td></tr><tr><td class="line-number" value="157"></td><td class="line-content">              iconcolor = './icon_tag/tag2.png'</td></tr><tr><td class="line-number" value="158"></td><td class="line-content">              break;</td></tr><tr><td class="line-number" value="159"></td><td class="line-content">            case '3':</td></tr><tr><td class="line-number" value="160"></td><td class="line-content">              iconcolor = './icon_tag/tag3.png'</td></tr><tr><td class="line-number" value="161"></td><td class="line-content">              break;</td></tr><tr><td class="line-number" value="162"></td><td class="line-content">            case '4':</td></tr><tr><td class="line-number" value="163"></td><td class="line-content">              iconcolor = './icon_tag/tag4.png'</td></tr><tr><td class="line-number" value="164"></td><td class="line-content">              break;</td></tr><tr><td class="line-number" value="165"></td><td class="line-content">            case '5':</td></tr><tr><td class="line-number" value="166"></td><td class="line-content">              iconcolor = './icon_tag/tag5.png'</td></tr><tr><td class="line-number" value="167"></td><td class="line-content">              break;</td></tr><tr><td class="line-number" value="168"></td><td class="line-content">            case '6':</td></tr><tr><td class="line-number" value="169"></td><td class="line-content">              iconcolor = './icon_tag/tag6.png'</td></tr><tr><td class="line-number" value="170"></td><td class="line-content">              break;</td></tr><tr><td class="line-number" value="171"></td><td class="line-content">            case '7':</td></tr><tr><td class="line-number" value="172"></td><td class="line-content">              iconcolor = './icon_tag/tag7.png'</td></tr><tr><td class="line-number" value="173"></td><td class="line-content">              break;</td></tr><tr><td class="line-number" value="174"></td><td class="line-content">            default:</td></tr><tr><td class="line-number" value="175"></td><td class="line-content">              iconcolor = './icon_tag/tag7.png'</td></tr><tr><td class="line-number" value="176"></td><td class="line-content">          }</td></tr><tr><td class="line-number" value="177"></td><td class="line-content">          const icon = new google.maps.MarkerImage(iconcolor);</td></tr><tr><td class="line-number" value="178"></td><td class="line-content"></td></tr><tr><td class="line-number" value="179"></td><td class="line-content">          // マーカーのセット</td></tr><tr><td class="line-number" value="180"></td><td class="line-content">          marker[i] = new google.maps.Marker({</td></tr><tr><td class="line-number" value="181"></td><td class="line-content">            position: markerLatLng,          // マーカーを立てる位置を指定</td></tr><tr><td class="line-number" value="182"></td><td class="line-content">            map: map,                        // マーカーを立てる地図を指定</td></tr><tr><td class="line-number" value="183"></td><td class="line-content">            icon: icon                       // アイコン指定</td></tr><tr><td class="line-number" value="184"></td><td class="line-content">          });</td></tr><tr><td class="line-number" value="185"></td><td class="line-content"></td></tr><tr><td class="line-number" value="186"></td><td class="line-content">          // 吹き出しへのデータセット</td></tr><tr><td class="line-number" value="187"></td><td class="line-content">          const done = markerData[i]['done'];</td></tr><tr><td class="line-number" value="188"></td><td class="line-content">          const tag = markerData[i]['tag'];</td></tr><tr><td class="line-number" value="189"></td><td class="line-content">          const name = markerData[i]['name'];</td></tr><tr><td class="line-number" value="190"></td><td class="line-content">          const img = markerData[i]['img'];</td></tr><tr><td class="line-number" value="191"></td><td class="line-content"></td></tr><tr><td class="line-number" value="192"></td><td class="line-content">          let setHtml;</td></tr><tr><td class="line-number" value="193"></td><td class="line-content">          if (done === 'y'){</td></tr><tr><td class="line-number" value="194"></td><td class="line-content">            setHtml = tag + '&lt;br&gt;&lt;br&gt;' + name + '&lt;br&gt;&lt;img src=' + img + ' width="200" height="150"&gt;&lt;br&gt;';</td></tr><tr><td class="line-number" value="195"></td><td class="line-content">          } else {</td></tr><tr><td class="line-number" value="196"></td><td class="line-content">            setHtml = tag + '&lt;br&gt;&lt;br&gt;' + name + '&lt;br&gt;&lt;br&gt;';</td></tr><tr><td class="line-number" value="197"></td><td class="line-content">          }</td></tr><tr><td class="line-number" value="198"></td><td class="line-content"></td></tr><tr><td class="line-number" value="199"></td><td class="line-content">          // 吹き出しのセット</td></tr><tr><td class="line-number" value="200"></td><td class="line-content">          infoWindow[i] = new google.maps.InfoWindow({</td></tr><tr><td class="line-number" value="201"></td><td class="line-content">            content: setHtml</td></tr><tr><td class="line-number" value="202"></td><td class="line-content">          });</td></tr><tr><td class="line-number" value="203"></td><td class="line-content"></td></tr><tr><td class="line-number" value="204"></td><td class="line-content">          // サイドバーのデータセット</td></tr><tr><td class="line-number" value="205"></td><td class="line-content">          sidebar_html += '&lt;a href="javascript:myclick(' + i + ')"&gt;' + tag + ' : ' + name + '(' + done + ')' + '&lt;/a&gt;&lt;br&gt;';</td></tr><tr><td class="line-number" value="206"></td><td class="line-content"></td></tr><tr><td class="line-number" value="207"></td><td class="line-content">          // Function:マーカーにクリックイベントを追加</td></tr><tr><td class="line-number" value="208"></td><td class="line-content">          markerEvent(i);</td></tr><tr><td class="line-number" value="209"></td><td class="line-content">        }</td></tr><tr><td class="line-number" value="210"></td><td class="line-content"></td></tr><tr><td class="line-number" value="211"></td><td class="line-content">        // サイドバーへの書き出し</td></tr><tr><td class="line-number" value="212"></td><td class="line-content">        document.getElementById("sidebar").innerHTML = 'Googleスプレッドシートデータ&lt;br&gt;&lt;br&gt;' + sidebar_html;</td></tr><tr><td class="line-number" value="213"></td><td class="line-content"></td></tr><tr><td class="line-number" value="214"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="215"></td><td class="line-content"></td></tr><tr><td class="line-number" value="216"></td><td class="line-content">      // Function:マーカーにクリックイベントを追加</td></tr><tr><td class="line-number" value="217"></td><td class="line-content">      function markerEvent(i) {</td></tr><tr><td class="line-number" value="218"></td><td class="line-content">        marker[i].addListener('click', function() {</td></tr><tr><td class="line-number" value="219"></td><td class="line-content">          myclick(i);     // Function: 吹き出しのオープン・クローズ</td></tr><tr><td class="line-number" value="220"></td><td class="line-content">        });</td></tr><tr><td class="line-number" value="221"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="222"></td><td class="line-content"></td></tr><tr><td class="line-number" value="223"></td><td class="line-content">      // Function: 吹き出しのオープン・クローズ</td></tr><tr><td class="line-number" value="224"></td><td class="line-content">      let openWindow;</td></tr><tr><td class="line-number" value="225"></td><td class="line-content">      function myclick(i) {</td></tr><tr><td class="line-number" value="226"></td><td class="line-content">        if(openWindow){</td></tr><tr><td class="line-number" value="227"></td><td class="line-content">          openWindow.close();</td></tr><tr><td class="line-number" value="228"></td><td class="line-content">        }</td></tr><tr><td class="line-number" value="229"></td><td class="line-content">        infoWindow[i].open(map, marker[i]);</td></tr><tr><td class="line-number" value="230"></td><td class="line-content">        openWindow = infoWindow[i];</td></tr><tr><td class="line-number" value="231"></td><td class="line-content">      }</td></tr><tr><td class="line-number" value="232"></td><td class="line-content"></td></tr><tr><td class="line-number" value="233"></td><td class="line-content">      // 絞り込みボタンが押下されたとき</td></tr><tr><td class="line-number" value="234"></td><td class="line-content">      const tagBtn = document.getElementById('getTag');</td></tr><tr><td class="line-number" value="235"></td><td class="line-content">      tagBtn.addEventListener('click', function(){</td></tr><tr><td class="line-number" value="236"></td><td class="line-content">        const tag = document.getElementById('tag').value;</td></tr><tr><td class="line-number" value="237"></td><td class="line-content"></td></tr><tr><td class="line-number" value="238"></td><td class="line-content">        const tagmarkerData = [];</td></tr><tr><td class="line-number" value="239"></td><td class="line-content">        let j = 0;</td></tr><tr><td class="line-number" value="240"></td><td class="line-content">        for (let i = 0; i &lt; markerData.length; i++) {</td></tr><tr><td class="line-number" value="241"></td><td class="line-content">          if (tag === markerData[i]['tag'].charAt(0)) {</td></tr><tr><td class="line-number" value="242"></td><td class="line-content">            tagmarkerData[j] = markerData[i];</td></tr><tr><td class="line-number" value="243"></td><td class="line-content">            j++;</td></tr><tr><td class="line-number" value="244"></td><td class="line-content">          }</td></tr><tr><td class="line-number" value="245"></td><td class="line-content">          if (tag === '0') {</td></tr><tr><td class="line-number" value="246"></td><td class="line-content">            tagmarkerData[i] = markerData[i];</td></tr><tr><td class="line-number" value="247"></td><td class="line-content">          }</td></tr><tr><td class="line-number" value="248"></td><td class="line-content">        }</td></tr><tr><td class="line-number" value="249"></td><td class="line-content"></td></tr><tr><td class="line-number" value="250"></td><td class="line-content">        // 地図の初期表示</td></tr><tr><td class="line-number" value="251"></td><td class="line-content">        const target = document.getElementById('target');</td></tr><tr><td class="line-number" value="252"></td><td class="line-content">        const centerp = {lat: 37.67229496806523, lng: 137.88838989062504};</td></tr><tr><td class="line-number" value="253"></td><td class="line-content"></td></tr><tr><td class="line-number" value="254"></td><td class="line-content">        map = new google.maps.Map(target, {</td></tr><tr><td class="line-number" value="255"></td><td class="line-content">          center: centerp,</td></tr><tr><td class="line-number" value="256"></td><td class="line-content">          zoom: 5,</td></tr><tr><td class="line-number" value="257"></td><td class="line-content">        });</td></tr><tr><td class="line-number" value="258"></td><td class="line-content"></td></tr><tr><td class="line-number" value="259"></td><td class="line-content">        // Function:位置とマーカーをセット（タグを絞り込みしたデータ）</td></tr><tr><td class="line-number" value="260"></td><td class="line-content">        setData(tagmarkerData);</td></tr><tr><td class="line-number" value="261"></td><td class="line-content"></td></tr><tr><td class="line-number" value="262"></td><td class="line-content">      });</td></tr><tr><td class="line-number" value="263"></td><td class="line-content"></td></tr><tr><td class="line-number" value="264"></td><td class="line-content">    <span class="html-tag">&lt;/script&gt;</span></td></tr><tr><td class="line-number" value="265"></td><td class="line-content"></td></tr><tr><td class="line-number" value="266"></td><td class="line-content">  <span class="html-tag">&lt;/body&gt;</span></td></tr><tr><td class="line-number" value="267"></td><td class="line-content"><span class="html-tag">&lt;/html&gt;</span><span class="html-end-of-file"></span></td></tr></tbody></table></body></html>
+  <body>
+    <div id="header">Google Maps - 日本いろいろMY LIST</div>
+    <br>
+    <div>
+      <select id="tag">
+        <option value="0">0.ALL</option>
+        <option value="1">1.世界遺産</option>
+        <option value="2">2.日本三大:七不思議</option>
+        <option value="3">3.滝</option>
+        <option value="4">4.城</option>
+        <option value="5">5.山</option>
+        <option value="6">6.温泉</option>
+        <option value="7">7.国立公園</option>
+      </select>
+      <button id="getTag">タグの絞込み</button>
+    </div>
+
+    <table>
+      <tr>
+        <td><div id="target"></div></td>
+        <td><div id="sidebar"></div></td>
+      </tr>
+    </table>
+
+    <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyCR0ghzj18Kz4135gTOX77Ui2_7LJQKWYY&callback=initMap" async defer></script>
+
+    <script>
+      let marker = [];
+      let infoWindow = [];
+      let markerData = [];
+
+      // 地図初期表示
+      function initMap() {
+
+        const target = document.getElementById('target');
+        const centerp = {lat: 37.67229496806523, lng: 137.88838989062504};
+
+        map = new google.maps.Map(target, {
+          center: centerp,
+          zoom: 5,
+        });
+
+        // Function:地図データの取得
+        getMapdata();
+
+      }
+
+      // Function:地図データの取得
+      function getMapdata(){
+
+        //APIにてデータを取得して、位置とマーカーをセットするfunctionを呼び出す
+        const request = new XMLHttpRequest();
+        const bookid = '1g_tyf97anRd8ci1I9UwOICOm2R_oqP3OmfRrLJ2HnIM';
+        const sheetname = 'mylist';
+        const googleapi = 'AIzaSyCR0ghzj18Kz4135gTOX77Ui2_7LJQKWYY';
+        const url = 'https://sheets.googleapis.com/v4/spreadsheets/' + bookid + '/values/' + sheetname + '?key=' + googleapi;
+
+        request.open('GET', url, true);
+        request.responseType = 'json';
+
+        request.onload = function () {
+          const data = this.response;     // 取得できた値を格納
+          console.log(data);
+          markerData = parseData(data);   // Function:データ変換
+          console.log(markerData);
+          setData(markerData);            // Function:位置とマーカーをセット
+        };
+
+        request.send();
+
+      }
+
+      // Function:データ変換
+      function parseData(data) {
+        const keys = data.values[0];
+        const parsemarkerData = [];
+        data.values.forEach(function(value, i) {
+          if (i > 0) {
+            const hash = {};
+            value.forEach(function(d, j) {
+              hash[keys[j]] = d;
+            });
+            parsemarkerData.push(hash);
+          }
+        });
+        return parsemarkerData;
+      }
+
+      // Function:位置とマーカーをセット
+      function setData(markerData){
+
+        // 初期化
+        let sidebar_html = "";
+        marker = [];
+
+        for (let i = 0; i < markerData.length; i++) {
+
+          // マーカー位置のセット
+          const markerLatLng = new google.maps.LatLng({
+            lat: Number(markerData[i]['lat']),
+            lng: Number(markerData[i]['lng'])
+          });
+
+          // マーカーアイコンのセット
+          const tagno = markerData[i]['tag'].charAt(0)
+          switch (tagno) {
+            case '1':
+              iconcolor = './icon_tag/tag1.png'
+              break;
+            case '2':
+              iconcolor = './icon_tag/tag2.png'
+              break;
+            case '3':
+              iconcolor = './icon_tag/tag3.png'
+              break;
+            case '4':
+              iconcolor = './icon_tag/tag4.png'
+              break;
+            case '5':
+              iconcolor = './icon_tag/tag5.png'
+              break;
+            case '6':
+              iconcolor = './icon_tag/tag6.png'
+              break;
+            case '7':
+              iconcolor = './icon_tag/tag7.png'
+              break;
+            default:
+              iconcolor = './icon_tag/tag7.png'
+          }
+          const icon = new google.maps.MarkerImage(iconcolor);
+
+          // マーカーのセット
+          marker[i] = new google.maps.Marker({
+            position: markerLatLng,          // マーカーを立てる位置を指定
+            map: map,                        // マーカーを立てる地図を指定
+            icon: icon                       // アイコン指定
+          });
+
+          // 吹き出しへのデータセット
+          const done = markerData[i]['done'];
+          const tag = markerData[i]['tag'];
+          const name = markerData[i]['name'];
+          const img = markerData[i]['img'];
+
+          let setHtml;
+          if (done === 'y'){
+            setHtml = tag + '<br><br>' + name + '<br><img src=' + img + ' width="200" height="150"><br>';
+          } else {
+            setHtml = tag + '<br><br>' + name + '<br><br>';
+          }
+
+          // 吹き出しのセット
+          infoWindow[i] = new google.maps.InfoWindow({
+            content: setHtml
+          });
+
+          // サイドバーのデータセット
+          sidebar_html += '<a href="javascript:myclick(' + i + ')">' + tag + ' : ' + name + '(' + done + ')' + '</a><br>';
+
+          // Function:マーカーにクリックイベントを追加
+          markerEvent(i);
+        }
+
+        // サイドバーへの書き出し
+        document.getElementById("sidebar").innerHTML = 'Googleスプレッドシートデータ<br><br>' + sidebar_html;
+
+      }
+
+      // Function:マーカーにクリックイベントを追加
+      function markerEvent(i) {
+        marker[i].addListener('click', function() {
+          myclick(i);     // Function: 吹き出しのオープン・クローズ
+        });
+      }
+
+      // Function: 吹き出しのオープン・クローズ
+      let openWindow;
+      function myclick(i) {
+        if(openWindow){
+          openWindow.close();
+        }
+        infoWindow[i].open(map, marker[i]);
+        openWindow = infoWindow[i];
+      }
+
+      // 絞り込みボタンが押下されたとき
+      const tagBtn = document.getElementById('getTag');
+      tagBtn.addEventListener('click', function(){
+        const tag = document.getElementById('tag').value;
+
+        const tagmarkerData = [];
+        let j = 0;
+        for (let i = 0; i < markerData.length; i++) {
+          if (tag === markerData[i]['tag'].charAt(0)) {
+            tagmarkerData[j] = markerData[i];
+            j++;
+          }
+          if (tag === '0') {
+            tagmarkerData[i] = markerData[i];
+          }
+        }
+
+        // 地図の初期表示
+        const target = document.getElementById('target');
+        const centerp = {lat: 37.67229496806523, lng: 137.88838989062504};
+
+        map = new google.maps.Map(target, {
+          center: centerp,
+          zoom: 5,
+        });
+
+        // Function:位置とマーカーをセット（タグを絞り込みしたデータ）
+        setData(tagmarkerData);
+
+      });
+
+    </script>
+
+  </body>
+</html>
