@@ -50,8 +50,8 @@
     <div>
       <select id="tag">
         <option value="0">0.ALL</option>
-        <option value="1">1.世界遺産</option>
-        <option value="2">2.日本三大:七不思議</option>
+        <option value="1">1.地域包括支援システム1</option>
+        <option value="2">2.地域包括支援システム2</option>
         <option value="3">3.滝</option>
         <option value="4">4.城</option>
         <option value="5">5.山</option>
@@ -189,6 +189,7 @@
 //          const done = markerData[i]['done'];
           const tag = markerData[i]['tag'];
           const name = markerData[i]['name'];
+          const timestamp = markerData[i]['タイムスタンプ'];
 //          const img = markerData[i]['img'];
 
           let setHtml;
@@ -205,7 +206,7 @@
 
           // サイドバーのデータセット
 //          sidebar_html += '<a href="javascript:myclick(' + i + ')">' + tag + ' : ' + name + '(' + done + ')' + '</a><br>';
-          sidebar_html += '<a href="javascript:myclick(' + i + ')">' + tag + ' : ' + name + '</a><br>';
+          sidebar_html += '<a href="javascript:myclick(' + i + ')">' + tag + ' : ' + name + '(' + timestamp + ')' + '</a><br>';
 
           // Function:マーカーにクリックイベントを追加
           markerEvent(i);
