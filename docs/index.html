@@ -7,11 +7,11 @@
       #header {
         font-family: Meriyo UI;
         font-size: 14px;
-          color: white;
+    	  color: white;
         font-weight: bold;
-          background-color: darkblue;
-          padding: 3px;
-                width: 1750px;
+    	  background-color: darkblue;
+    	  padding: 3px;
+				width: 1750px;
         border: 1px outset gray;
       }
       #target {
@@ -56,7 +56,7 @@
         <option value="4">4.城</option>
         <option value="5">5.山</option>
         <option value="6">6.温泉</option>
-        <option value="7">7.xxx</option>
+        <option value="7">7.国立公園</option>
       </select>
       <button id="getTag">タグの絞込み</button>
     </div>
@@ -68,7 +68,7 @@
       </tr>
     </table>
 
-    <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyDexXnvpRB8rLjKLaHTMv5BiJZDukg5RAA&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyCR0ghzj18Kz4135gTOX77Ui2_7LJQKWYY&callback=initMap" async defer></script>
 
     <script>
       let marker = [];
@@ -96,9 +96,9 @@
 
         //APIにてデータを取得して、位置とマーカーをセットするfunctionを呼び出す
         const request = new XMLHttpRequest();
-        const bookid = '1u5WUNdNBh6Bz7seBveRa4g625oZmw0n-etC0-8ZzlcE';
-        const sheetname = 'list1';
-        const googleapi='AIzaSyDexXnvpRB8rLjKLaHTMv5BiJZDukg5RAA';
+        const bookid = '1g_tyf97anRd8ci1I9UwOICOm2R_oqP3OmfRrLJ2HnIM';
+        const sheetname = 'mylist';
+        const googleapi = 'AIzaSyCR0ghzj18Kz4135gTOX77Ui2_7LJQKWYY';
         const url = 'https://sheets.googleapis.com/v4/spreadsheets/' + bookid + '/values/' + sheetname + '?key=' + googleapi;
 
         request.open('GET', url, true);
@@ -106,9 +106,10 @@
 
         request.onload = function () {
           const data = this.response;     // 取得できた値を格納
+          console.log(data);
           markerData = parseData(data);   // Function:データ変換
+          console.log(markerData);
           setData(markerData);            // Function:位置とマーカーをセット
-			
         };
 
         request.send();
@@ -117,7 +118,7 @@
 
       // Function:データ変換
       function parseData(data) {
-        const keys = data.values;
+        const keys = data.values[0];
         const parsemarkerData = [];
         data.values.forEach(function(value, i) {
           if (i > 0) {
@@ -147,7 +148,7 @@
           });
 
           // マーカーアイコンのセット
-          const tagno = markerData[i]['tag']
+          const tagno = markerData[i]['tag'].charAt(0)
           switch (tagno) {
             case '1':
               iconcolor = './icon_tag/tag1.png'
@@ -208,7 +209,7 @@
         }
 
         // サイドバーへの書き出し
-        document.getElementById("sidebar").innerHTML = '<br><br>' + sidebar_html;
+        document.getElementById("sidebar").innerHTML = 'Googleスプレッドシートデータ<br><br>' + sidebar_html;
 
       }
 
@@ -237,7 +238,7 @@
         const tagmarkerData = [];
         let j = 0;
         for (let i = 0; i < markerData.length; i++) {
-          if (tag === markerData[i]['tag']) {
+          if (tag === markerData[i]['tag'].charAt(0)) {
             tagmarkerData[j] = markerData[i];
             j++;
           }
@@ -264,8 +265,3 @@
 
   </body>
 </html>
-
-
-
-
-
