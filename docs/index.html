@@ -186,17 +186,17 @@
           });
 
           // 吹き出しへのデータセット
-          const done = markerData[i]['done'];
+//          const done = markerData[i]['done'];
           const tag = markerData[i]['tag'];
           const name = markerData[i]['name'];
-          const img = markerData[i]['img'];
+//          const img = markerData[i]['img'];
 
           let setHtml;
-          if (done === 'y'){
-            setHtml = tag + '<br><br>' + name + '<br><img src=' + img + ' width="200" height="150"><br>';
-          } else {
+//          if (done === 'y'){
+//            setHtml = tag + '<br><br>' + name + '<br><img src=' + img + ' width="200" height="150"><br>';
+//          } else {
             setHtml = tag + '<br><br>' + name + '<br><br>';
-          }
+//          }
 
           // 吹き出しのセット
           infoWindow[i] = new google.maps.InfoWindow({
@@ -204,7 +204,8 @@
           });
 
           // サイドバーのデータセット
-          sidebar_html += '<a href="javascript:myclick(' + i + ')">' + tag + ' : ' + name + '(' + done + ')' + '</a><br>';
+//          sidebar_html += '<a href="javascript:myclick(' + i + ')">' + tag + ' : ' + name + '(' + done + ')' + '</a><br>';
+          sidebar_html += '<a href="javascript:myclick(' + i + ')">' + tag + ' : ' + name + '</a><br>';
 
           // Function:マーカーにクリックイベントを追加
           markerEvent(i);
