@@ -44,6 +44,7 @@
     </style>
   </head>
 
+  <!- ここはタグによる絞り込みのリスト ->
   <body>
     <div id="header">Google Maps - 日本いろいろMY LIST</div>
     <br>
@@ -235,6 +236,7 @@
       }
 
       // 絞り込みボタンが押下されたとき
+      // タグ名の最初の文字(charAt(0)と，)
       const tagBtn = document.getElementById('getTag');
       tagBtn.addEventListener('click', function(){
         const tag = document.getElementById('tag').value;
