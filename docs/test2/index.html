@@ -32,8 +32,8 @@
     // 値を取得
     var txt  = obj.options[idx].text;
     // 表示
-    document.getElementsByClassName('badge-primary')[0].textContent = txt;
- 
+    // document.getElementsByClassName('badge-primary')[0].textContent = txt;
+    document.getElementById('test_aaa').value = txt;
   }
  
 </script>
@@ -43,7 +43,8 @@
  
     <h2><span class="badge badge-primary">選択したテキスト</span></h2>
  
-    <form>
+    <form action="page2.html" method="GET">
+    <input type="hidden" name="test_aaa" id="test_aaa">
       <div class="form-row align-items-center">
         <div class="col-auto my-1">
           <select id="select" class="custom-select mr-sm-2">            
