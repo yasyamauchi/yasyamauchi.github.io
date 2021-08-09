@@ -11,6 +11,7 @@
     href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"-->
 </head>
+<!--
 <style>
   .main {
     margin: 0 auto;
@@ -22,6 +23,8 @@
     width: 500px;
   }
 </style>
+-->
+
 <script>
  
   function hoge() { 
@@ -41,14 +44,21 @@
 <body>
   <div class="main">
  
+    <!--
     <h2><span class="badge badge-primary">選択したテキスト</span></h2>
- 
+    -->
+
     <form action="page2.html" method="GET">
     <input type="hidden" name="test_aaa" id="test_aaa">
+    <!--
       <div class="form-row align-items-center">
         <div class="col-auto my-1">
-          <select id="select" class="custom-select mr-sm-2">            
-            <option value="a">One</option>
+          <select id="select" class="custom-select mr-sm-2">
+          -->            
+          <div>
+            <div>
+              <select id="select">
+                <option value="a">One</option>
             <option value="b">Two</option>
             <option value="c">Three</option>
           </select>
