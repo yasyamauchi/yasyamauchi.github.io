@@ -3,7 +3,7 @@
 <body>
 <!--location.searchの参考例：https://bl6.jp/web/javascript/location-search-query/-->
 
-<p id="text0">002</p>
+<p id="text0">003</p>
 <var id="text1">text1</var>,
 <var id="text2">text2</var>
 <p>---</p>
@@ -11,7 +11,10 @@
     var values = location.search.substring(1).split('&');
     document.writeln(values[0]);
     document.writeln(values[1]);
+    var kv = values[0].split('=');
+    document.getElementById("text1").innerText = kv[1];
 
+    /*
     var q = location.search.substring(1);
     if(q) {
         var a = q.split("=")[1];
@@ -22,6 +25,7 @@
         var a = q.split("=")[1];
         document.getElementById("text2").innerText = a;
     }
+    */
 </script>
 
 </body>
