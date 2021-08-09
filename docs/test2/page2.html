@@ -9,23 +9,26 @@
 <!--更に.split("=")で=で分け配列にする→「key0」「value0」「key1」「value1」-->
 
 <p id="text0">Ver. 007</p>
-入力は<var id="text1">text1</var>,
-正解は<var id="text2">text2</var>
+入力された数は<var id="text1">text1</var>,
+正解は<var id="text2">text2</var>です
 <p>---</p>
 <script>
     var q = location.search.substring(1);
     if(q) {
         var values = q.split('&');
-        var kv = values[0].split('=');
-        var answer = kv[1];
-        document.getElementById("text1").innerText = answer; // value0
-        kv = values[1].split('=');
-        var rightanswer = kv[1];
-        document.getElementById("text2").innerText = rightanswer; // value1
-        if(answer==rightanswer){
+
+        var kv0 = values[0].split('=');
+        var value0 = kv0[1];  // なおkv0[0]にはkey0(answer)が入っている
+        document.getElementById("text1").innerText = value0; // value0
+
+        var kv1 = values[1].split('=');
+        var value1 = kv1[1];  // なおkv1[0]にはkey1(rightanswer)が入っている
+        document.getElementById("text2").innerText = value1; // value1
+
+        if(value0==value1){
             document.writeln('OK');
         } else {
-            document.writeln('NG');
+            document.writeln('NG'); // 例えばここを元の入力ページに戻るなどとする
         }
     }
 </script>
