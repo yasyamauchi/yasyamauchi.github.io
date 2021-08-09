@@ -2,15 +2,17 @@
 <title>page02</title>
 <body>
 
-<input id="test_bbb">
+<!--input id="test_bbb"-->
+<p id="inputnum">入力</p>の3倍は
 <p id="result">結果</p>
 
 <script>
     var q = location.search.substring(1);
     if(q) {
         var a = q.split("=")[1];
-        document.getElementById("test_bbb").value = a*3;
-        document.getElementById("result").innerHTML = "Changed";
+        // document.getElementById("test_bbb").value = a*3;
+        document.getElementById("inputnum").innerText = a;
+        document.getElementById("result").innerText = a*3;
     }
 </script>
 
