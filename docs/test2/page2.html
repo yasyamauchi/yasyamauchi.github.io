@@ -8,31 +8,26 @@
 <!--次に.split('&')で&記号で分け配列にする→「key0=value0」「key1=value1」-->
 <!--更に.split("=")で=で分け配列にする→「key0」「value0」「key1」「value1」-->
 
-<p id="text0">Ver. 005</p>
-<var id="text1">text1</var>,
-<var id="text2">text2</var>
+<p id="text0">Ver. 006</p>
+入力は<var id="text1">text1</var>,
+正解は<var id="text2">text2</var>
 <p>---</p>
 <script>
     var q = location.search.substring(1);
     if(q) {
         var values = q.split('&');
         var kv = values[0].split('=');
-        document.getElementById("text1").innerText = kv[1];
+        var answer = kv[1];
+        document.getElementById("text1").innerText = answer; // value0
         kv = values[1].split('=');
-        document.getElementById("text2").innerText = kv[1];
+        var rightanswer = kv[1];
+        document.getElementById("text2").innerText = rightanswer; // value1
+        if(answer=rightanswer){
+            document.writeln('OK');
+        } else {
+            document.writeln('NG');
+        }
     }
-    /*
-    var q = location.search.substring(1);
-    if(q) {
-        var a = q.split("=")[1];
-        document.getElementById("text1").innerText = a;
-    }
-    var q = location.search.substring(2);
-    if(q) {
-        var a = q.split("=")[1];
-        document.getElementById("text2").innerText = a;
-    }
-    */
 </script>
 
 </body>
