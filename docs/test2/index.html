@@ -19,16 +19,18 @@
     var idx = obj.selectedIndex;
     // 値を取得
     var txt  = obj.options[idx].text;
-    document.getElementById('test_aaa').value = txt; // 変数test_aaaに代入
+    document.getElementById('answer').value = txt; // ユーザの回答を変数answerに代入
+    document.getElementById('rightanswer').value = 2; // 正しい答え(JSONなどから読む)
   }
  
 </script>
  
 <body>
-  <div class="main">
- 
+<!--div class="main"-->
+<div> 
     <form action="page2.html" method="GET">
-    <input type="hidden" name="test_aaa" id="test_aaa">
+    <input type="hidden" name="answer" id="answer">
+    <input type="hidden" name="rightanswer" id="rightanswer">
     <div>
         <div>
             <select id="select">
@@ -41,7 +43,7 @@
     <input onclick="hoge();" type="submit">
     </form>
  
-  </div>
+</div>
 </body>
  
 </html>
