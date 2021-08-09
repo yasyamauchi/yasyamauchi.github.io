@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>mebeeサンプル</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+</head>
+<style>
+  .main {
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    width: 500px;
+  }
+</style>
+<script>
+ 
+  function hoge() { 
+    
+    var obj = document.getElementById('select');
+    // 選択されている値の番号を取得
+    var idx = obj.selectedIndex;
+    // 値を取得
+    var txt  = obj.options[idx].text;
+    // 表示
+    document.getElementsByClassName('badge-primary')[0].textContent = txt;
+ 
+  }
+ 
+</script>
+ 
+<body>
+  <div class="main">
+ 
+    <h2><span class="badge badge-primary">選択したテキスト</span></h2>
+ 
+    <form>
+      <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <select id="select" class="custom-select mr-sm-2">            
+            <option value="a">One</option>
+            <option value="b">Two</option>
+            <option value="c">Three</option>
+          </select>
+        </div>
+      </div>
+    </form>
+ 
+    <button onclick="hoge();" type="button" class="btn btn-outline-warning">取得</button>
+ 
+  </div>
+</body>
+ 
+</html>
