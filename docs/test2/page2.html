@@ -3,12 +3,14 @@
 <body>
 <!--location.searchの参考例：https://bl6.jp/web/javascript/location-search-query/-->
 
-<p id="text0">aaa</p>
+<p id="text0">---</p>
 <var id="text1">text1</var>,
 <var id="text2">text2</var>
 
 <script>
-    document.GetElementById("text0").innerText = location.search;
+    var values = location.search;
+    document.writeln(values);
+
     var q = location.search.substring(1);
     if(q) {
         var a = q.split("=")[1];
