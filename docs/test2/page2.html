@@ -8,8 +8,8 @@
 <var id="text2">text2</var>
 
 <script>
+    document.GetElementById("text0").innerText = location.search;
     var q = location.search.substring(1);
-    document.GetElementById("text0").innerText = q;
     if(q) {
         var a = q.split("=")[1];
         document.getElementById("text1").innerText = a;
