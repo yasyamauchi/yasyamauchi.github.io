@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <title>page02</title>
 <body>
+<!--location.searchの参考例：https://bl6.jp/web/javascript/location-search-query/-->
 
-<!--input id="test_bbb"-->
-<var id="inputnum">入力</var>の3倍は
-<var id="result">結果</var>
+<var id="text1">text1</var>,
+<var id="text2">text2</var>
 
 <script>
     var q = location.search.substring(1);
     if(q) {
         var a = q.split("=")[1];
-        document.getElementById("inputnum").innerText = a;
-        document.getElementById("result").innerText = a*3;
+        document.getElementById("text1").innerText = a;
+    }
+    var q = location.search.substring(2);
+    if(q) {
+        var a = q.split("=")[1];
+        document.getElementById("text2").innerText = a;
     }
 </script>
 
