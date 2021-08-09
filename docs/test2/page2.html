@@ -3,22 +3,24 @@
 <body>
 <!--location.searchの参考例：https://bl6.jp/web/javascript/location-search-query/-->
 <!--https://www.gravity-works.jp/gravica/web/js/002995.html-->
-<!--index.htmlから送られてくる文字列は，hogehoge&key0=value0&key1=value1 の書式-->
-<!--まずsubstring-->
+<!--index.htmlから送られてくる文字列は，「hogehoge?key0=value0&key1=value1」の書式-->
+<!--まず.substring(1)で?以降だけ取り出す→「key0=value0&key1=value1」-->
+<!--次に.split('&')で&記号で分け配列にする→「key0=value0」「key1=value1」-->
+<!--更に.split("=")で=で分け配列にする→「key0」「value0」「key1」「value1」-->
 
-<p id="text0">004</p>
+<p id="text0">Ver. 005</p>
 <var id="text1">text1</var>,
 <var id="text2">text2</var>
 <p>---</p>
 <script>
-    var alltext = location.search;
-    document.writeln(alltext);
-    var values = location.search.substring(1).split('&');
-    //document.writeln(values[0]);
-    //document.writeln(values[1]);
-    var kv = values[0].split('=');
-    document.getElementById("text1").innerText = kv[1];
-
+    var q = location.search.substring(1);
+    if(q) {
+        var values = q.split('&');
+        var kv = values[0].split('=');
+        document.getElementById("text1").innerText = kv[1];
+        kv = values[1].split('=');
+        document.getElementById("text2").innerText = kv[1];
+    }
     /*
     var q = location.search.substring(1);
     if(q) {
